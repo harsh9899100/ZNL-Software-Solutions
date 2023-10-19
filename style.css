@@ -259,6 +259,12 @@ body {
     margin-top: 10px; 
 }
 
+@media only screen and (max-width: 1000px) {
+    .services-header{
+        font-size: 35px;
+    }
+}
+
 /*The section-4-----------------------------------------------------------------------------------*/
 
 .steps-header{
@@ -319,6 +325,10 @@ body {
         padding: 40px 5px; /* Adjust padding as needed */
     }
 
+    .steps-header{
+        font-size: 35px;
+    }
+
     .process-steps {
         padding: 0;
     }
@@ -359,7 +369,7 @@ body {
 }
 
 .form-header{
-    font-size: 80px;
+    font-size: 50px;
     font-weight: bolder;
     text-align: center;
     margin: 30px;
@@ -423,6 +433,10 @@ select {
 
     .extra-services input[type="checkbox"] {
         width: 10%;
+    }
+
+    .form-header{
+        font-size: 35px;
     }
 }
 
