@@ -11,7 +11,7 @@ body {
 
 /* Apply styles to the navigation bar */
 .nav-container {
-    background-color: transparent;
+    background-color: #060b10;
     color: #e6ecf2;
     display: flex;
     justify-content: space-between;
@@ -205,6 +205,14 @@ body {
     background-color: #ffffff; /* White background for the section */
 }
 
+.services-header{
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 30px;
+    color:#206bff;
+}
+
 /* Our Services container */
 .our-services {
     display: flex;
@@ -249,4 +257,202 @@ body {
     font-size: small;
     color: #919191; /* Color for service descriptions */
     margin-top: 10px; 
+}
+
+/*The section-4-----------------------------------------------------------------------------------*/
+
+.steps-header{
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 30px;
+    color:#206bff;
+}
+
+/* Section styles */
+.section-4 {
+    background-color: #060b10; /* White background for the section */
+    padding: 50px 50px; /* Adjust padding as needed */
+}
+
+/* Process Steps container */
+.process-steps {
+    background-color: #060b10;
+    padding: 20px;
+}
+
+/* Process Step styles */
+.process-step {
+    margin: 50px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Process name and image container */
+.stepname-image-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.step-image-container {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.stepname-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.step-image-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;    
+}
+
+/* Mobile-friendly adjustments */
+@media only screen and (max-width: 1000px) {
+
+    .section-4 {
+        padding: 40px 5px; /* Adjust padding as needed */
+    }
+
+    .process-steps {
+        padding: 0;
+    }
+    
+    .process-step {
+        flex-basis: 100%; /* Full width on screens wider than 1000px */
+    }
+
+    .stepname-image-container img {
+        margin-bottom: 40px;
+    }
+    .step-image-container {
+        width: 300px;
+        text-align: center;
+    }
+
+    .step-image-container img {
+        width: 200px;  
+    }
+}
+
+/*The section-5-----------------------------------------------------------------------------------*/
+
+.form-container {
+    background-color: #12181f;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 200px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .form-container {
+        background-color: #12181f;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 20px;
+    }
+}
+
+.form-header{
+    font-size: 80px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 30px;
+    color:#bf00a6;
+}
+
+.field-name {
+    color: #8585ff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.field-name h1 {
+    margin: 0;
+}
+
+.pricing {
+    color: #6cff59b7;
+    font-weight: lighter;
+}
+
+select {
+    background-color: #3b434c;
+    color: #e6ecf2;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+/* Style the label and checkbox to float left and right within their container */
+
+.extra-services {
+    padding-left: 2%;
+}
+
+.extra-services {
+    display: flex;
+    align-items: center;
+}
+
+.extra-services label {
+    float: left;
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.extra-services input[type="checkbox"] {
+    float: right;
+    width: 10%;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .extra-services label {
+        width: 90%;
+        font-size: small;
+    }
+
+    .extra-services input[type="checkbox"] {
+        width: 10%;
+    }
+}
+
+/* Style the Submit button */
+
+input[type="button"] {
+    background-color: #8efbf7;
+    color: #060b10;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #8efbf7cf;
+}
+
+.success-message{
+	background-color: rgba(70, 255, 70, 0.400);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+	padding: 5px;
+    margin: 40px 10px;
+}
+
+/*footer -----------------------------------------------------------------------------------*/
+
+.footer{
+    text-align: center;
+    padding: 50px 0;
 }
