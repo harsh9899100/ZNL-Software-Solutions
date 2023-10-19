@@ -94,7 +94,7 @@ body {
     margin: 10px;
     font-size: 120px;
     letter-spacing: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .main-section h2 {
@@ -108,16 +108,19 @@ body {
 @media screen and (max-width: 1000px) {
     .main-section {
         height: 700px;
+        padding: 0px 20px;
     }
 
     .main-section p {
-        margin: 10px;
-        font-size: 30px;
-        font-family: cursive;
+        font-size: 20px;
     }
 
     .main-section h1 {
-        font-size: 80px;
+        font-size: 50px;
+    }
+
+    .main-section h2 {
+        font-size: 20px;
     }
 
 }
@@ -246,24 +249,4 @@ body {
     font-size: small;
     color: #919191; /* Color for service descriptions */
     margin-top: 10px; 
-}
-
-/* Tablet-friendly adjustments */
-/* @media only screen and (max-width: 1400px) {
-    .our-services {
-        padding: 0px 100px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .our-services {
-        padding: 0px 30px;
-    }
-}
-
-/* Mobile-friendly adjustments */
-/* @media only screen and (max-width: 480px) {
-    .our-service {
-        flex-basis: 100%; /* Full width on mobile screens */
-    }
 }
