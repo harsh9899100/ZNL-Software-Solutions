@@ -1,0 +1,269 @@
+
+body {
+    background-color: #060b10;
+    color: #e6ecf2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*The navbar Style -----------------------------------------------------------------------------------*/
+
+/* Apply styles to the navigation bar */
+.nav-container {
+    background-color: transparent;
+    color: #e6ecf2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px 20px 10px;
+}
+
+/* Style the logo */
+.logo-container>a {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    padding-left: 50px;
+}
+
+/* Style the first toggle container */
+.toggle-container-1 {
+    display: flex;
+    gap: 20px;
+}
+
+/* Style the toggle items in the first container */
+.toggle-item>a {
+    color: #abb5bf;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Style the second toggle container */
+.toggle-container-2 {
+    background-color: #3b434c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.toggle-container-2:hover {
+    background-color: #002855;
+}
+
+/* Style the toggle item in the second container */
+.toggle-container-2 .toggle-item>a {
+    color: #8efbf7;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .logo-container>a {
+        padding-left: 5px;
+    }
+
+    .toggle-container-1 {
+        display: none;
+    }
+}
+
+/*The section-1-----------------------------------------------------------------------------------*/
+    .main-section {
+        background-image: url(images/section-1-bg.jpg);
+        /* backdrop-filter: blur(50%); */
+        background-size: cover;
+        /* To ensure the image covers the entire section */
+        height: 680px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #e6ecf2;
+      }
+
+.main-section p {
+    margin: 10px;
+    font-size: 30px;
+    font-family: cursive;
+    letter-spacing: 10px;
+}
+
+.main-section h1 {
+    margin: 10px;
+    font-size: 120px;
+    letter-spacing: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-section h2 {
+    letter-spacing: 5px;
+    background: linear-gradient(to right, #30CFD0 30%, #2fa4c7 30%, #3bd030 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .main-section {
+        height: 700px;
+    }
+
+    .main-section p {
+        margin: 10px;
+        font-size: 30px;
+        font-family: cursive;
+    }
+
+    .main-section h1 {
+        font-size: 80px;
+    }
+
+}
+
+
+
+/*The section-2-----------------------------------------------------------------------------------*/
+
+.section-2 {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+.the-lines {
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.the-line {
+    color: #bf00a6;
+    margin: auto;
+    width: 5px;
+    font-weight: bold;
+    background-color: #bf00a6;
+    border-radius: 10px;
+}
+
+.section-2>h1 {
+    margin: 0;
+    padding: 50px 100px 0px 100px;
+}
+
+.section-2>p {
+    line-height: 20px;
+    padding: 50px 300px 0px 300px;
+}
+
+.get-started-btn {
+    margin: 50px;
+    font-size: 30px;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    padding: 10px 50px 10px 50px;
+    margin: 0% 40%;
+    background-color: rgb(191, 0, 166);
+    border: solid #bf00a6;
+    border-radius: 100px;
+}
+
+.get-started-btn:hover {
+    background-color: #bf00a661;
+    transition: 200ms;
+}
+
+.get-started-btn>a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .section-2>h1 {
+        padding: 30px;
+    }
+
+    .section-2>p {
+        padding: 30px;
+    }
+
+    .get-started-btn {
+        padding: 10px 20px 10px 20px;
+        margin: 10px 50px;
+    }
+
+}
+
+/*The section-3-----------------------------------------------------------------------------------*/
+
+/* Section styles */
+.section-3 {
+    background-color: #ffffff; /* White background for the section */
+}
+
+/* Our Services container */
+.our-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Our Service styles */
+.our-service {
+    width: 300px;
+    padding: 20px;
+    margin: 10px 50px;
+    border:1px solid white;
+    background-color: #ffffff; /* White background for service items */
+    border-radius: 5px;
+    text-align: center;
+}
+
+.our-service:hover{
+    border:1px solid rgb(200, 200, 200);
+}
+
+/* Service image container */
+.service-image-container {
+    padding: 20px; 
+}
+
+.service-image-container>img {
+   height: 100px;
+}
+
+/* Service name styles */
+.service-name {
+    font-weight: bold;
+    color: #1c1c1c; /* Color for service names */
+    margin-top: 10px; /* Adjust spacing as needed */
+}
+
+/* Service description styles */
+.service-description {
+    font-size: small;
+    color: #919191; /* Color for service descriptions */
+    margin-top: 10px; 
+}
+
+/* Tablet-friendly adjustments */
+/* @media only screen and (max-width: 1400px) {
+    .our-services {
+        padding: 0px 100px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .our-services {
+        padding: 0px 30px;
+    }
+}
+
+/* Mobile-friendly adjustments */
+/* @media only screen and (max-width: 480px) {
+    .our-service {
+        flex-basis: 100%; /* Full width on mobile screens */
+    }
+}
